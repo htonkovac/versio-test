@@ -1,6 +1,17 @@
+# XLC PANDA Versioning & Release Management Mapping
+ 
 options:
-  prev_tag: "versio-prev"
-
+  prev_tag: "prev-marker"
+ 
+projects:
+  - name: phpipam
+    id: 1
+    version:
+      file: "version.json"
+      json: "version"
+ 
 sizes:
-  use_angular: true
-  fail: ["*"]
+  major: [ breaking ]
+  minor: [ feat, refactor ]
+  patch: [ fix, docs, chore ]
+  none: ["*"]
